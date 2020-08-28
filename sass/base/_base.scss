@@ -40,7 +40,7 @@ body {
   max-width: 540px;
   margin-right: 3.5rem;
   @include respond(tab-land) {
-    // max-width: 500px;
+    max-width: 500px;
   }
 
   @include respond(tab-port) {
@@ -57,8 +57,7 @@ body {
     // margin-right: 1rem;
     font-size: 4.8rem;
     line-height: 1.1;
-    padding-left: 4rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 auto;
     text-align: center;
 
@@ -78,7 +77,7 @@ body {
 
   &__slogan {
     padding-top: 3rem;
-    padding-left: 9rem;
+    padding-left: 7rem;
     // text-align: center;
     @include respond(custom) {
       padding: 0;

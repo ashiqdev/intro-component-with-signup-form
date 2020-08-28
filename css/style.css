@@ -43,6 +43,9 @@ body {
   font-size: 1.6rem;
   max-width: 540px;
   margin-right: 3.5rem; }
+  @media only screen and (max-width: 75em) {
+    .header {
+      max-width: 500px; } }
   @media only screen and (max-width: 62.5em) {
     .header {
       margin-left: -130px; } }
@@ -54,8 +57,7 @@ body {
   .header h3 {
     font-size: 4.8rem;
     line-height: 1.1;
-    padding-left: 4rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0 auto;
     text-align: center; }
     @media only screen and (max-width: 59.375em) {
@@ -71,7 +73,7 @@ body {
         padding-top: 7rem; } }
   .header__slogan {
     padding-top: 3rem;
-    padding-left: 9rem; }
+    padding-left: 7rem; }
     @media only screen and (max-width: 59.375em) {
       .header__slogan {
         padding: 0;
@@ -107,7 +109,7 @@ body {
     box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
     text-align: center;
     margin-bottom: 3rem;
-    font-weight: 600; }
+    font-weight: 700; }
   .form__main {
     background: #fff;
     padding: 40px 40px 25px 40px;
