@@ -1,0 +1,173 @@
+/*
+0 - 600px   PHONE
+600 - 900px TABLET PORTRAIT
+900 - 1200  TABLET LANDSCAPE
+1200 - 1799 WHERE OUR NORMAL STYLES APPLY 
+1800px +  :   BIG DESKTOP
+*/
+/*
+-  phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+.wrapper {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-image: url("../../images/bg-intro-desktop.png");
+  background-color: #ff7a7a;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto; }
+  @media only screen and (max-width: 59.375em) {
+    .wrapper {
+      flex-direction: column; } }
+
+.header {
+  font-size: 1.6rem;
+  max-width: 540px;
+  margin-right: 3.5rem; }
+  @media only screen and (max-width: 62.5em) {
+    .header {
+      margin-left: -130px; } }
+  @media only screen and (max-width: 59.375em) {
+    .header {
+      margin: 0;
+      max-width: 900px;
+      padding-bottom: 3rem; } }
+  .header h3 {
+    font-size: 4.8rem;
+    line-height: 1.1;
+    padding-left: 4rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center; }
+    @media only screen and (max-width: 59.375em) {
+      .header h3 {
+        padding-top: 7rem;
+        font-size: 3rem;
+        text-align: center;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .header h3 {
+        text-align: center;
+        padding: 0;
+        padding-top: 7rem; } }
+  .header__slogan {
+    padding-top: 3rem;
+    padding-left: 9rem; }
+    @media only screen and (max-width: 59.375em) {
+      .header__slogan {
+        padding: 0;
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 3rem;
+        padding-bottom: 2rem; } }
+
+body {
+  font-family: 'Poppins', sans-serif; }
+
+.form {
+  font-size: 1.6rem; }
+  @media only screen and (max-width: 75em) {
+    .form {
+      max-width: 400px; } }
+  @media only screen and (max-width: 59.375em) {
+    .form {
+      max-width: 900px; } }
+  @media only screen and (max-width: 37.5em) {
+    .form {
+      max-width: 350px; } }
+  .form__header {
+    background: #6055a5;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 3rem; }
+  .form__main {
+    background: #fff;
+    padding: 40px 40px 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15); }
+    .form__main-input {
+      display: block;
+      font-size: 1.5rem;
+      width: 100%;
+      padding: 2rem;
+      margin-bottom: 2.3rem;
+      border: 1px solid #e3e3e3;
+      border-radius: 5px;
+      color: #3e3c49; }
+      .form__main-input:focus {
+        border: 1px solid #3e3c49;
+        outline: none; }
+    .form__main-button {
+      outline: none;
+      border: none;
+      padding: 2rem;
+      width: 100%;
+      background: #38cc8c;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      border-bottom: 4px solid #31bf81; }
+      .form__main-button:hover {
+        cursor: pointer;
+        opacity: 0.8; }
+      .form__main-button:active {
+        outline: none;
+        border-bottom: none;
+        border-top: 4px solid #31bf81;
+        background: #31bf81; }
+    .form__main-note {
+      color: #b9b6d3;
+      font-size: 1.2rem;
+      text-align: center;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem; }
+    .form__main-terms a {
+      color: #ff7a7a;
+      font-weight: 600;
+      text-decoration: none; }
+      .form__main-terms a:hover {
+        border-bottom: 1px solid #ff7a7a; }
+    .form__main-area {
+      display: flex;
+      position: relative; }
+    .form__main-icon {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 5%;
+      top: 15%;
+      opacity: 0; }
+    .form__main-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem; }
+    .form__main-msg {
+      margin-left: auto;
+      margin-top: -2rem;
+      font-size: 1.2rem;
+      font-style: italic; }

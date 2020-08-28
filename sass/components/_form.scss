@@ -1,0 +1,118 @@
+.form {
+  font-size: 1.6rem;
+  @include respond(tab-land) {
+    max-width: 400px;
+  }
+
+  @include respond(custom) {
+    max-width: 900px;
+  }
+
+  @include respond(phone) {
+    max-width: 350px;
+  }
+
+  &__header {
+    background: $color-blue;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  &__main {
+    background: #fff;
+    padding: 40px 40px 25px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
+
+    &-input {
+      display: block;
+      font-size: 1.5rem;
+    //   font-weight: 600;
+      width: 100%;
+      padding: 2rem;
+      margin-bottom: 2.3rem;
+      border: 1px solid #e3e3e3;
+      border-radius: 5px;
+      color: #3e3c49;
+
+      &:focus {
+        border: 1px solid #3e3c49;
+        outline: none;
+      }
+    }
+
+    &-button {
+      outline: none;
+      border: none;
+      padding: 2rem;
+      width: 100%;
+      background: $color-green;
+      color: #fff;
+      text-transform: uppercase;
+      border-radius: 5px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      border-bottom: 4px solid $color-border-button;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      &:active {
+        outline: none;
+        border-bottom: none;
+        border-top: 4px solid $color-border-button;
+        background: $color-border-button;
+      }
+    }
+
+    &-note {
+      color: $color-grayish-blue;
+      font-size: 1.2rem;
+      text-align: center;
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+    }
+
+    &-terms a {
+        color: $color-red;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid $color-red;
+        }
+    }
+
+    &-area {
+      display: flex;
+      position: relative;
+    }
+
+    &-icon {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 5%;
+      top: 15%;
+      opacity: 0;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
+
+    &-msg {
+      margin-left: auto;
+      margin-top: -2rem;
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+  }
+}

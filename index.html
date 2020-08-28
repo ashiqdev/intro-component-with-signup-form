@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height initial-scale=1">
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <h3>
+          <!-- <span class="header__first">Learn to code by</span>
+          <span class="header__second">watching others</span> -->
+          Learn to code by watching others
+        </h3>
+
+        <p class="header__slogan">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
+
+      <div class="form">
+        <div class="form__header">
+          Try it free 7 days then $20/mo. thereafter
+        </div>
+        <div class="form__main">
+          <form action="#" id="myForm" novalidate>
+            <div class="form__main-group">
+              <div class="form__main-area">
+                <input
+                  type="text"
+                  class="form__main-input"
+                  placeholder="First Name"
+                  name="First Name"
+                  id="firstName"
+                  onfocusout="validateFirstName()"
+                />
+                <img
+                  class="form__main-icon"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+              </div>
+              <span class="form__main-msg">ABCD</span>
+            </div>
+
+            <div class="form__main-group">
+              <div class="form__main-area">
+                <input
+                  type="text"
+                  class="form__main-input"
+                  placeholder="Last Name"
+                  name="Last Name"
+                  id="lastName"
+                  onfocusout="validateLastName()"
+                />
+                <img
+                  class="form__main-icon"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+              </div>
+              <span class="form__main-msg"></span>
+            </div>
+
+            <div class="form__main-group">
+              <div class="form__main-area">
+                <input
+                  type="text"
+                  class="form__main-input"
+                  placeholder="Email Addresss"
+                  name="Email"
+                  id="email"
+                  onfocusout="validateEmail()"
+                />
+                <img
+                  class="form__main-icon"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+              </div>
+              <span class="form__main-msg"></span>
+            </div>
+
+            <div class="form__main-group">
+              <div class="form__main-area">
+                <input
+                  type="password"
+                  class="form__main-input"
+                  placeholder="Password"
+                  name="Password"
+                  id="password"
+                  onfocusout="validatePassword()"
+                />
+                <img
+                  class="form__main-icon"
+                  src="images/icon-error.svg"
+                  alt=""
+                />
+              </div>
+              <span class="form__main-msg"></span>
+            </div>
+
+            <button class="form__main-button">Claim your free trial</button>
+          </form>
+          <p class="form__main-note">
+            By clicking the button, you are agreeing to our
+            <span class="form__main-terms">
+              <a href="#">Terms and Services</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

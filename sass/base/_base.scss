@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // this defines what 1rem is
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  // min-width: 1110px;
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  background-image: url('../../images/bg-intro-desktop.png');
+  //   background-size: cover;
+  background-color: $color-red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin: 0 auto;
+
+  @include respond(custom) {
+    flex-direction: column;
+  }
+}
+
+.header {
+  font-size: 1.6rem;
+  // flex: 0 1 41.5%;
+  max-width: 540px;
+  margin-right: 3.5rem;
+  @include respond(tab-land) {
+    // max-width: 500px;
+  }
+
+  @include respond(tab-port) {
+    margin-left: -130px;
+  }
+
+  @include respond(custom) {
+    margin: 0;
+    max-width: 900px;
+    padding-bottom: 3rem;
+  }
+
+  & h3 {
+    // margin-right: 1rem;
+    font-size: 4.8rem;
+    line-height: 1.1;
+    padding-left: 4rem;
+    font-weight: 600;
+    margin: 0 auto;
+    text-align: center;
+
+    @include respond(custom) {
+      padding-top: 7rem;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @include respond(phone) {
+      text-align: center;
+      padding: 0;
+      padding-top: 7rem;
+    }
+  }
+
+  &__slogan {
+    padding-top: 3rem;
+    padding-left: 9rem;
+    // text-align: center;
+    @include respond(custom) {
+      padding: 0;
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
