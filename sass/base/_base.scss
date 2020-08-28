@@ -89,5 +89,10 @@ body {
       padding-bottom: 2rem;
       padding-left: 3rem;
     }
+
+    @include respond(phone) {
+      margin-top: 1rem;
+      padding:0;
+    }
   }
 }
