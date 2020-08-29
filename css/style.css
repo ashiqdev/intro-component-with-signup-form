@@ -41,14 +41,13 @@ body {
 
 .header {
   font-size: 1.6rem;
-  max-width: 540px;
-  margin-right: 3.5rem; }
+  max-width: 540px; }
   @media only screen and (max-width: 75em) {
     .header {
       max-width: 500px; } }
   @media only screen and (max-width: 62.5em) {
     .header {
-      margin-left: -130px; } }
+      margin-left: 20px; } }
   @media only screen and (max-width: 59.375em) {
     .header {
       margin: 0;
@@ -58,8 +57,7 @@ body {
     font-size: 4.8rem;
     line-height: 1.1;
     font-weight: 700;
-    margin: 0 auto;
-    text-align: center; }
+    margin: 0 auto; }
     @media only screen and (max-width: 59.375em) {
       .header h3 {
         padding-top: 7rem;
@@ -72,8 +70,7 @@ body {
         padding: 0;
         padding-top: 7rem; } }
   .header__slogan {
-    padding-top: 3rem;
-    padding-left: 7rem; }
+    padding-top: 3rem; }
     @media only screen and (max-width: 59.375em) {
       .header__slogan {
         padding: 0;
@@ -98,7 +95,8 @@ body {
       max-width: 400px; } }
   @media only screen and (max-width: 59.375em) {
     .form {
-      max-width: 900px; } }
+      max-width: 900px;
+      padding-bottom: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .form {
       max-width: 350px; } }
@@ -109,7 +107,8 @@ body {
     box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.15);
     text-align: center;
     margin-bottom: 3rem;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #fff; }
   .form__main {
     background: #fff;
     padding: 40px 40px 25px 40px;
@@ -119,8 +118,7 @@ body {
       display: block;
       font-size: 1.5rem;
       width: 100%;
-      padding: 2rem;
-      margin-bottom: 2.3rem;
+      padding: 1.5rem;
       border: 1px solid #e3e3e3;
       border-radius: 5px;
       color: #3e3c49; }
@@ -171,7 +169,6 @@ body {
       top: 15%;
       opacity: 0; }
     .form__main-group {
-      display: flex;
       flex-direction: column;
       margin-bottom: 2rem; }
     .form__main-msg {
